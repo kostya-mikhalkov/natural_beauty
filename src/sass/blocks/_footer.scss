@@ -1,0 +1,49 @@
+.footer {
+    padding-bottom: 50px;
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+    .footer__logo {
+        margin-bottom: 0;
+        &-link {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(255, 124, 78, 1);
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 80px;
+        margin-bottom: 0;
+    }
+    &__item {
+        &-link {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: #0F1F1C;
+            opacity: 0.5;
+            &:hover{
+                color: rgba(255, 124, 78, 1);
+            }
+        }
+    }
+    &__butt {
+        display: flex;
+        align-items: center;
+        gap: 66px;
+        &-link {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            color: #838B89;
+            &:hover{
+                color: rgba(255, 124, 78, 1);
+            }
+        }
+    }
+}

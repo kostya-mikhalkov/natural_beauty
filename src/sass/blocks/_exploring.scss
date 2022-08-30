@@ -1,0 +1,53 @@
+.exploring {
+    max-height: 581px;
+    padding-bottom: 135px;
+    background: #FFFFFF;
+    border-radius: 60px;
+    &__box {
+        position: relative;
+        max-width: 715px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: '';
+            display: block;
+            width: 63px;
+            height: 83px;
+            background-image: url('./../../icons/exploring/cta-el-02.svg');
+            position: absolute;
+            bottom: -55px;
+            left: -126px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 63px;
+            height: 83px;
+            background-image: url('./../../icons/exploring/cta-el-01.svg');
+            position: absolute;
+            top: -55px;
+            right: -126px;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 68px;
+        color: #0F1F1C;
+        max-width: 519px;
+        margin-bottom: 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: #0F1F1C;
+        opacity: 0.5;
+        margin-bottom: 60px;
+    }
+}

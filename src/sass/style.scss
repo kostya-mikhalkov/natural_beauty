@@ -1,0 +1,41 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'base/variables';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 1);
+}
+a {
+    color: #FFFFFF;
+    transition: all 0.3s ease-in;
+}
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container__right {
+    padding-left: calc((100% - 1270px)/2 + 15px); 
+
+}
+
+@import 'blocks/promo';
+@import 'blocks/button';
+@import 'blocks/destinations';
+@import 'blocks/about';
+@import 'blocks/exploring';
+@import 'blocks/subscribe';
+@import 'blocks/footer';

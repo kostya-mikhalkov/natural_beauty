@@ -1,0 +1,96 @@
+.about {
+    padding-bottom: 233px;
+    &__flex {
+        display: flex;
+        gap: 68px;
+    }
+    &__img {
+        max-width: 478px;
+        max-height: 537px;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content {
+        max-width: 565px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 68px;
+        color: #0F1F1C;
+        margin-bottom: 35px;
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+        margin-bottom: 60px;
+
+        &-descr {
+            font-weight: 500;
+            font-size: 33px;
+            line-height: 50px;
+            color: #0F1F1C;
+            span {
+                display: block;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 38px;
+                color: #0F1F1C;
+                opacity: 0.5;
+            }
+        }
+
+        &-box {
+            width: 134px;
+            height: 134px;
+            border-radius: 50%;
+            background: $main-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: #0F1F1C;
+        opacity: 0.5;
+        margin-bottom: 30px;
+    }
+    &__rating {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row-reverse;
+        gap: 8px;
+        &-item {
+            font-size: 59px;
+            color: #C4C4C4;
+            cursor: pointer;
+            transition: all 0.3s ease-in ;
+            &:hover, &:hover ~ .about__rating-item {
+                color: #FFD336;
+            }
+        }
+    }
+    &__rating[data-total-value="1"] .about__rating-item:nth-child(n + 5),
+    &__rating[data-total-value="2"] .about__rating-item:nth-child(n + 4),
+    &__rating[data-total-value="3"] .about__rating-item:nth-child(n + 3),
+    &__rating[data-total-value="4"] .about__rating-item:nth-child(n + 2),
+    &__rating[data-total-value="5"] .about__rating-item:nth-child(n + 1) {
+        color: #FFD336;
+    }
+}

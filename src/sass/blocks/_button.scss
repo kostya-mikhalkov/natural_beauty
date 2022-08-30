@@ -1,0 +1,38 @@
+.btn {
+    background: $main-color;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 49px;
+    &:hover {
+        filter: contrast(200%);
+    }
+    &-now {
+        width: 263px;
+        height: 91px;
+        font-weight: 600;
+        font-size: 25px;
+        border-radius: 27px;
+    }
+}
+.button {
+    width: 223px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $main-color;
+    border-radius: 27px;
+    &:hover {
+        filter: contrast(200%);
+    }
+    &-form {
+        transition: all 0.3s ease-in;
+        border: none;
+    }
+}
